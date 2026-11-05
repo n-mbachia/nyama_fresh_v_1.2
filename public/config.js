@@ -8,7 +8,7 @@ const CONFIG = {
   SLOTS: ["Wednesday", "Saturday"],
   GOAT_LEAD_DAYS: 3,                 // notice needed for goat orders
   GOAT_DEPOSIT: 0.5,                 // share paid at booking; balance after weighing, before dispatch
-  GOAT_PRICE_KG: 600,                // KES per kg dressed weight
+  GOAT_PRICE_KG: 800,                // KES per kg dressed weight
   FEE_RATE: 0.20                     // convenience fee, as a share of the meat subtotal
 };
 /* Delivery fee is paid to the rider on arrival. fee: null means "we confirm on WhatsApp". */
@@ -19,17 +19,17 @@ const ZONES = [
 ];
 /* price is per unit shown. Beef 550/kg, goat 600/kg, mince 400 per 500 g */
 const PACKS = [
-  { id: "stew",  name: "Beef Stew Pack",   unit: "per kg",    note: "1 kg beef, cleaned and cut for stew",      price: 550 },
-  { id: "pilau", name: "Pilau Pack",       unit: "per kg",    note: "1 kg small bone-in beef pieces",           price: 550 },
-  { id: "mince", name: "Beef Mince Pack",  unit: "per 500 g", note: "500 g, ground fresh",                      price: 400 },
-  { id: "choma", name: "Nyama Choma Pack", unit: "per kg",    note: "1 kg goat ribs and chops",                 price: 600 },
-  { id: "gstew", name: "Goat Stew Pack",   unit: "per kg",    note: "1 kg bone-in goat pieces",                 price: 600 }
+  { id: "stew",  name: "Beef Stew Pack",   unit: "per kg",    note: "1 kg of cleaned, boneless beef cubes, ready for your favourite homemade stew.",      price: 700 },
+  { id: "pilau", name: "Pilau Pack",       unit: "per kg",    note: "1 kg of flavourful bone-in beef pieces, cut for pilau.",                             price: 600 },
+  { id: "mince", name: "Beef Mince Pack",  unit: "per 500 g", note: "500 g of freshly ground beef, ideal for mince dishes, meatballs and burgers.",       price: 450 },
+  { id: "choma", name: "Nyama Choma Pack", unit: "per kg",    note: "1 kg of goat ribs and chops, ready for the grill.",                                  price: 800 },
+  { id: "gstew", name: "Goat Stew Pack",   unit: "per kg",    note: "1 kg of goat meat, cut into convenient bone-in stew pieces.",                        price: 800 }
 ];
 /* Box prices are the meat subtotal of the mix in the note, at the per-kg prices above */
 const BOXES = [
-  { id: "s", name: "Small family box",  note: "About 2 kg: 1 kg beef, 500 g mince, 500 g goat",   price: 1250 },
-  { id: "m", name: "Medium family box", note: "About 3.5 kg: 2 kg beef, 1 kg mince, 500 g goat",  price: 2200 },
-  { id: "l", name: "Large family box",  note: "About 5 kg: 3 kg beef, 1 kg mince, 1 kg goat",     price: 3050 }
+  { id: "s", name: "Small family box",  note: "About 2 kg: 1.5 kg beef, 500 g mince, 500 g goat",   price: 1750 },
+  { id: "m", name: "Medium family box", note: "About 3.5 kg: 2 kg beef, 500 g mince, 1 kg goat",  price: 2450 },
+  { id: "l", name: "Large family box",  note: "About 6 kg: 3 kg beef, 1 kg mince, 2 kg goat",     price: 4300 }
 ];
 const GOATS = [
   { id: "half",  name: "Half goat",  note: "About 6 to 8 kg dressed",   kg: 7 },
