@@ -27,7 +27,7 @@ const PACKS = [
 ];
 /* Box prices are the meat subtotal of the mix in the note, at the per-kg prices above */
 const BOXES = [
-  { id: "s", name: "Small family box",  note: "About 2 kg: 1.5 kg beef, 500 g mince, 500 g goat",   price: 1750 },
+  { id: "s", name: "Small family box",  note: "About 2.5 kg: 1.5 kg beef, 500 g mince, 500 g goat",   price: 1750 },
   { id: "m", name: "Medium family box", note: "About 3.5 kg: 2 kg beef, 500 g mince, 1 kg goat",  price: 2450 },
   { id: "l", name: "Large family box",  note: "About 6 kg: 3 kg beef, 1 kg mince, 2 kg goat",     price: 4300 }
 ];
